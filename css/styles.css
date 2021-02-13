@@ -301,7 +301,7 @@ color:#93bfed;
     background: #155acf;
 }
 
-@media (width:400px){
+/* @media (width:400px){
     .tarjeta{
         width: 300px;
     }
@@ -407,4 +407,11 @@ padding: 5px;
     font-size: 11px;
 }
 
-}
+} */
+
+/* @media (width:400px){
+    .contenedor{
+        width: 400px;
+    }
+} */
+
