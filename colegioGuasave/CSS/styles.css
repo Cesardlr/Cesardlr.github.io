@@ -19,18 +19,6 @@ body{
     max-width: 1450px;
 }
 
-.fondo{
-        width: 1450px;
-        background: url(img/Instalaciones/Canchas.jpg);
-        background-repeat: no-repeat;
-        background-position: cover;
-}
-
-.fondo__layer{
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
 .header{
     display: flex;
     align-items: center;
@@ -44,6 +32,17 @@ body{
 .header__img{
     width: 6%;
     margin-left: 30px;
+}
+
+.slogan__thumb{
+    width: 400px;
+    height: 400px;
+    background: #fd9595;;
+}
+
+.slogan__thumb-img{
+    width: 350px;
+    border-radius: ;
 }
 
 .menu {
