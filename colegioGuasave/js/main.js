@@ -37,3 +37,21 @@ ScrollReveal().reveal('.info__card-container--personal', {
 // EDUCACION SCROLL REVEAL
 
 
+
+
+
+
+// CARROUSEL
+window.addEventListener('load',function(){
+    new Glider(document.querySelector('.carrousel__list'),{
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '.carrousel__indicators',
+    arrows: {
+    prev: '.carrousel__before',
+    next: '.carrousel__next'
+},
+    });
+});
+
+

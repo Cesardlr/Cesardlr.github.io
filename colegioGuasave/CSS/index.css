@@ -1,0 +1,45 @@
+  /* Parte de el video */
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 1519px;
+   }
+   
+.videoContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0px;
+   }
+
+   .titles {
+   max-width: 600px;
+   min-width: 200px;
+    max-height: 400px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+   }
+   
+   .titles__img {
+    width: 35%;
+   }
+   
+   .titles__title {
+    font-size: 50px;
+    color: #cf2f2f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   
+.videoContainer__video {
+    width: 700px;
+    height: 500px;
+   }

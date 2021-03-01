@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 1536px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #afafaf;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(192, 24, 24);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(235, 96, 96);
+}
+
+body {
+    width: 100%;
+    background-image: url(../img/whitediamond.png);
+    font-family: 'Raleway', sans-serif;
+   }
+   
+   .container {
+       overflow: hidden;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-items: center;
+   }
