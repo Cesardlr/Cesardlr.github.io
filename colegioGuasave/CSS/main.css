@@ -1,4 +1,4 @@
-* {
+*,*:before, *:after {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -35,11 +35,55 @@ body {
     background-image: url(../img/whitediamond.png);
     font-family: 'Raleway', sans-serif;
    }
+
    
+
    .container {
        overflow: hidden;
-       width: 100%;
+       max-width: 100%;
        display: flex;
        flex-direction: column;
        justify-items: center;
+       align-items: center;
    }
+
+   .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px 40px;
+}
+
+   
+.title{
+    margin-bottom: 20px;
+     color: #cf2f2f;
+     letter-spacing: 1.2px;
+     font-weight: 700;
+    }
+    
+    .title--little{
+        display: block;
+        margin: 15px 0px 7px 15px;
+        align-self:flex-start;
+    }
+    
+    .title--a{
+        font-style:italic;
+        text-decoration: none;
+    }
+    
+    .text{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+    .text-p{
+        /* display: inline-block; */
+        letter-spacing: .8px;
+        font-weight: 500;
+        text-align: justify;
+        /* float: left; */
+    }

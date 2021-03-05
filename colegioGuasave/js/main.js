@@ -52,6 +52,33 @@ window.addEventListener('load',function(){
     next: '.carrousel__next'
 },
     });
+    new Glider(document.querySelector('#carrousel__list2'),{
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '#carrousel__indicators2',
+    arrows: {
+    prev: '#carrousel__before2',
+    next: '#carrousel__next2'
+},
+    });
+    new Glider(document.querySelector('#carrousel__list3'),{
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '#carrousel__indicators3',
+    arrows: {
+    prev: '#carrousel__before3',
+    next: '#carrousel__next3'
+},
+    });
+    new Glider(document.querySelector('#carrousel__list4'),{
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '#carrousel__indicators4',
+    arrows: {
+    prev: '#carrousel__before4',
+    next: '#carrousel__next4'
+},
+    });
 });
 
 

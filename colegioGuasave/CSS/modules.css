@@ -1,12 +1,12 @@
 
 .module-container {
-    max-width: 1200px;
-    min-width: 500px;
+    width: 100%;
     padding: 30px;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
 }
 
 .module {
@@ -17,6 +17,7 @@
     padding: 20px;
     border: 10px solid #d94f5c;
     min-width:270px;
+    max-width: 750px;
 }
 
 .module--small{
@@ -57,14 +58,19 @@
 
 .module__list-item {
     font-size: 20px;
-    margin: 10px 10px 10px 5px;
     color: #424242;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    margin-left: 6px;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
 }
 
 .module--img {
     min-width: 300px;
     min-height: 400px;
-    max-height: 450px;
+    /* max-height: 450px; */
     max-width: 500px;
     justify-content: center;
 }
