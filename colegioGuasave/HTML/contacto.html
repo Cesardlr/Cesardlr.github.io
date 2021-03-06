@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO GUASAVE</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<div id="header"></div>
+
+<body>
+    <div class="container">
+        <h2 class="title">CONTACTO</h2>
+
+        <!-- <form class="formulario" action="enviar.php" method="post">
+            <input  name="name" type="text" placeholder="Nombre" id="name">
+            <input  name="mail" type="email" placeholder="Correo" id="mail">
+            <textarea name="message" id="message" placeholder="Mensaje" id="message"></textarea>
+            <input type="submit" value="Enviar">
+
+        </form> -->
+        <form action="enviar.php" method="post">
+            <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+            <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+            <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
+            <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
+            <div class="clear"></div>
+                <div class="col-md-8"> 
+                    <button type="submit" class="btn btn-primary">ENVIAR </button>
+</div>
+</form>
+	</div>
+   
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>$(function () { $("#header").load("header.html"); });</script>
+        <script src="https://kit.fontawesome.com/742dfea30d.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="../js/main.js"></script>
+</body>
+
+</html>
