@@ -2,6 +2,7 @@ const express = require("express")
 const nodemailer = require("nodemailer")
 const { google } = require("googleapis")
 const router = express.Router();
+const exphbs = require('express-handlebars')
 
 router.post("/send-email", (req, res) => {
     const { name, email, message } = req.body
@@ -41,7 +42,7 @@ router.post("/send-email", (req, res) => {
             });
             const mailOptions = {
                 from: "Pagina Web Colegio Guasave <cesardelriodlr@gmail>",
-                to: "eduardo.drb@gmail.com",
+                to: "cesar.delrio.colgve@gmail.com",
                 subject: "Pagina web colegio guasave dudas",
                 html: contentHtml
             };
@@ -54,8 +55,10 @@ router.post("/send-email", (req, res) => {
     sendMail()
         .then((result) => {
             console.log("mensaje enviado")
-            res.status(200).jsonp(req.body)})
+            res.status(200).render('contacto')})
         .catch((error) => console.log(error.message))
+
+        
 });
 
 
