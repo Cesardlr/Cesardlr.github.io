@@ -41,7 +41,7 @@ h2{
 .formulario input[type="text"]:focus,
 .formulario input[type="email"]:focus,
 .formulario textarea:focus {
-	border:2px solid #4fb560;
+	border:2px solid #da2222;
 }
 
 .formulario input[type="submit"] {

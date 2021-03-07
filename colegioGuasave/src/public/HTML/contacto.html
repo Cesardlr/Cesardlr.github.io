@@ -20,23 +20,26 @@
     <div class="container">
         <h2 class="title">CONTACTO</h2>
 
-        <!-- <form class="formulario" action="enviar.php" method="post">
-            <input  name="name" type="text" placeholder="Nombre" id="name">
-            <input  name="mail" type="email" placeholder="Correo" id="mail">
-            <textarea name="message" id="message" placeholder="Mensaje" id="message"></textarea>
-            <input type="submit" value="Enviar">
+        <form class="formulario" action="/send-email" method="POST">
+            <input
+            name="name" 
+            type="text" 
+            placeholder="Nombre" 
+            id="name">
 
-        </form> -->
-        <form action="enviar.php" method="post">
-            <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
-            <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
-            <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
-            <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
-            <div class="clear"></div>
-                <div class="col-md-8"> 
-                    <button type="submit" class="btn btn-primary">ENVIAR </button>
-</div>
-</form>
+            <input  
+            name="email" 
+            type="email" 
+            placeholder="Correo" 
+            id="mail">
+
+            <textarea name="message" 
+            id="message" 
+            placeholder="Mensaje" 
+            id="message"></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
 	</div>
    
 
