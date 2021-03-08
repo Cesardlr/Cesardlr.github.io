@@ -7,13 +7,14 @@
     width: 1519px;
    }
    
-.videoContainer {
+.indexContainer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 20px;
     margin-right: 0px;
+    margin-bottom: 30px;
    }
 
    .titles {
@@ -39,7 +40,7 @@
     margin-bottom: 20px;
    }
    
-.videoContainer__video {
+.indexContainer__video {
     width: 700px;
-    height: 500px;
+    height: 470px;
    }

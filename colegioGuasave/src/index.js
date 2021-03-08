@@ -10,3 +10,7 @@ app.use('/public', express.static(path.join(__dirname,"public")))
 app.listen(3500,()=>{
     console.log("server on port 3500")
 })
+
+app.get('/index', function(req,res){
+    res.sendFile(__dirname + '/public' +  '/HTML' + '/index2.html');
+  });

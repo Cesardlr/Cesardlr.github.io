@@ -8,6 +8,7 @@
     <title>COLEGIO GUASAVE</title>
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/modules.css">
     <link rel="stylesheet" href="../CSS/sinfonica.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,9 +17,11 @@
         rel="stylesheet">
 </head>
 
-<div id="header"></div>
 
 <body>
+    <div id="header"></div>
+
+
     <div class="text-container">
         <h2 class="title">NUESTRA HISTORIA</h2>
         <p class="text-p">
@@ -69,7 +72,8 @@
                     </ul>
                 </div>
                 <div class="module module--img">
-                    <img src="../img/Actividades/Sinfonica/sinfonica2.jpg" alt="">
+                    <iframe class="module__video" 
+                    src="https://www.youtube.com/embed/iYAIsIy80Y8"?autoplay=1&mute=1 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
             </div>
@@ -198,11 +202,12 @@
         </div>
     </div>
 
+<div id="footer"></div>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>$(function () { $("#header").load("header.html"); });</script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>$(function () { $("#header").load("header.html"); });</script>
+<script>$(function () { $("#footer").load("footer.html"); });</script>
     <script src="https://kit.fontawesome.com/742dfea30d.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../js/main.js"></script>

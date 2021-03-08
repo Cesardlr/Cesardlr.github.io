@@ -2,7 +2,7 @@ const express = require("express")
 const nodemailer = require("nodemailer")
 const { google } = require("googleapis")
 const router = express.Router();
-const exphbs = require('express-handlebars')
+
 
 router.post("/send-email", (req, res) => {
     const { name, email, message } = req.body
@@ -20,8 +20,8 @@ router.post("/send-email", (req, res) => {
     const REFRESH_TOKEN = "1//04fjXAnUpUo4BCgYIARAAGAQSNwF-L9Ir4m3WsCnHucfW1FnE9kPb7KAmnq06phxe9aQlNiweYoqjIAYw_YzA_ve7mNCwV8nCElI"
     const oAuth2Client = new google.auth.OAuth2(
         CLIENTD_ID,
-         CLIENT_SECRET,
-          REDIRECT_URI)
+        CLIENT_SECRET,
+        REDIRECT_URI)
 
     oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN })
 
@@ -55,11 +55,12 @@ router.post("/send-email", (req, res) => {
     sendMail()
         .then((result) => {
             console.log("mensaje enviado")
-            res.status(200).render('contacto')})
+            res.status(200).send()
+        })
         .catch((error) => console.log(error.message))
 
-        
-});
+        res.redirect('/index');
+    });
 
 
 module.exports = router;

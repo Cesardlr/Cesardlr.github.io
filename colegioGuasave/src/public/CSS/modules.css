@@ -85,6 +85,14 @@
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
+.module__video{
+    width: 440px;
+    height: 300px;
+    object-fit: cover;
+    /* margin: 10px; */
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
 .fa-check {
     margin-right: 7px;
 }
