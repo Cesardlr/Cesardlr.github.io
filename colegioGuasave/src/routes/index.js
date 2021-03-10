@@ -1,6 +1,6 @@
-const express = require("express")
-const nodemailer = require("nodemailer")
-const { google } = require("googleapis")
+const express = require("express");
+const nodemailer = require("nodemailer");
+const { google } = require("googleapis");
 const router = express.Router();
 
 
@@ -40,11 +40,14 @@ router.post("/send-email", (req, res) => {
                     accessToken: accessToken
                 },
             });
-            const mailOptions = {
+
+
+           let mailOptions = {
                 from: "Pagina Web Colegio Guasave <cesardelriodlr@gmail>",
                 to: "cesar.delrio.colgve@gmail.com",
+                cc:"",
                 subject: "Pagina web colegio guasave dudas",
-                html: contentHtml
+                html:contentHtml 
             };
             const result = await transporter.sendMail(mailOptions);
             return result;
@@ -59,8 +62,8 @@ router.post("/send-email", (req, res) => {
         })
         .catch((error) => console.log(error.message))
 
-        res.redirect('/index');
-    });
+    res.redirect('/index');
+});
 
 
 module.exports = router;

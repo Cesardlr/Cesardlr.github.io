@@ -1,13 +1,17 @@
-  /* Parte de el video */
-  main {
+
+
+  html{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 1519px;
-   }
-   
-.indexContainer {
+    justify-content:center;
+  }
+  
+  .container{
+    min-height: calc(100% - 34px);
+    position: relative;
+  }
+
+  .indexContainer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -15,11 +19,11 @@
     margin-top: 20px;
     margin-right: 0px;
     margin-bottom: 30px;
-   }
+  }
 
-   .titles {
-   max-width: 600px;
-   min-width: 200px;
+  .titles {
+    max-width: 600px;
+    min-width: 200px;
     max-height: 400px;
     min-height: 100px;
     display: flex;
@@ -27,20 +31,67 @@
     align-items: center;
     justify-items: center;
     text-align: center;
-   }
-   
-   .titles__img {
+  }
+
+  .titles__img {
     width: 35%;
-   }
-   
-   .titles__title {
+  }
+
+  .titles__title {
     font-size: 50px;
     color: #cf2f2f;
     margin-top: 20px;
     margin-bottom: 20px;
-   }
-   
-.indexContainer__video {
+  }
+
+  .indexContainer__video {
     width: 700px;
     height: 470px;
-   }
+  }
+
+  @media only screen and (min-width: 771px) and (max-width: 1400px) {
+    .indexContainer__video {
+      width: 600px;
+      height: 330px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 770px) {
+    .indexContainer__video {
+      width: 500px;
+      height: 270px;
+    }
+
+    .titles__title {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 400px) and (max-width: 600px) {
+
+    .indexContainer__video {
+      width: 350px;
+      height: 195px;
+    }
+
+    .titles__title {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 200px) and (max-width: 400px) {
+    .indexContainer__video {
+      width: 250px;
+      height: 211px;
+    }
+
+    .titles__title {
+      font-size: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }

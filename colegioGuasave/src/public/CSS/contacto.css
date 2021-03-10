@@ -1,5 +1,11 @@
-.container{
+/* .container{
 	margin-bottom: 52px;
+} */
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-items:space-between;
 }
 
 
