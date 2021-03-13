@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/educacion.css">
+    <link rel="stylesheet" href="../CSS/carrousel.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.5/glider.min.css">
 </head>
 
@@ -40,68 +42,56 @@
 
             <h4 class="level__title level__title--little">REQUISITOS DE ADMISION</h4>
             <div class="list-container">
-                <div class="list">
-                    <div class="num">
-                        <h3>Acta de nacimiento original y 3 copias (tener 3 años cumplidos al 31 de diciembre para
-                            primer
-                            grado y 4 años cumplidos al 31 de Diciembre para segundo grado)</h3>
-                    </div>
-                    <div class="num">
-                        <h3>Copias de la CURP</h3>
-                    </div>
-                    <div class="num">
-                        <h3>Copia de la cartilla de vacunación.</h3>
-                    </div>
-                    <div class="num">
-                        <h3>Para nuevo ingreso a tercer año: Reporte de evaluación de segundo y hoja de traslado.</h3>
-                    </div>
-                    <div class="num">
-                        <h3>Entrevista con el director.</h3>
-                    </div>
-                    <div class="num">
-                        <h3>Trámite de solicitud de inscripción.</h3>
-                    </div>
-                    <div class="num">
-                        <h3>Cubrir cuota de Inscripción</h3>
-                    </div>
-                    <div class="num">
-                        <h3>Compromiso moral por los Padres y solicitante en cumplir íntegramente el Reglamento Escolar.
-                        </h3>
-                    </div>
-                </div>
+                <ul class="list">
+                    <li class="module__list-item">Acta de nacimiento original y 3 copias (tener 3 años cumplidos al 31 de diciembre para
+                        primer
+                        grado y 4 años cumplidos al 31 de Diciembre para segundo grado)</li>
+                    <li class="module__list-item">Copias de la CURP</li>
+                    <li class="module__list-item">Copia de la cartilla de vacunación.</li>
+                    <li class="module__list-item">Para nuevo ingreso a tercer año: Reporte de evaluación de segundo y hoja de traslado.</li>
+                    <li class="module__list-item">Entrevista con el director.</li>
+                    <li class="module__list-item">Trámite de solicitud de inscripción.</li>
+                    <li class="module__list-item">Cubrir cuota de Inscripción</li>
+                    <li class="module__list-item">Compromiso moral por los Padres y solicitante en cumplir íntegramente el Reglamento Escolar.
+                    </li>
+                </ul>
+                
+                
                 <div class="module module--img">
                     <div class="carrousel__container">
-                        <button aria-label="Anterior" class="carrousel__before"><i class="fas fa-chevron-left"></i></button>
-                    <div class="carrousel__list">
-                        <div class="carrousel__element">
-                        <img src="../img/Instalaciones/Kinder/niños1.jpg" class="module__img">
+                        <button aria-label="Anterior" class="carrousel__button carrousel__before"><i
+                                class="fas fa-chevron-left"></i></button>
+                                <div class="carrousel__list">
+                            <div class="carrousel__element">
+                                <img src="../img/Instalaciones/Kinder/niños1.jpg" class="module__img">
+                            </div>
+                            <div class="carrousel__element">
+                                <img src="../img/Instalaciones/Kinder/niños2.jpg" class="module__img">
+                            </div>
                         </div>
-                        <div class="carrousel__element">
-                        <img src="../img/Instalaciones/Kinder/niños2.jpg" class="module__img">
+                        <button aria-label="Siguiente" class="carrousel__button carrousel__next"><i
+                            class="fas fa-chevron-right"></i></button>
                         </div>
+                        <div role="tablist" class="carrousel__indicators"></div>
                     </div>
-                    <button aria-label="Siguiente" class="carrousel__next"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div role="tablist" class="carrousel__indicators"></div>
+                    
                 </div>
-
-            </div>
-
-            <h4 class="level__title level__title--little">PLAN DE ESTUDIOS</h4>
-
-            <div class="module-container">
-                <div class="module">
+                
+                <h4 class="level__title level__title--little">PLAN DE ESTUDIOS</h4>
+                
+                <div class="module-container">
+                    <div class="module">
                     <h3 class="module__title">CAMPOS FORMATIVOS</h3>
                     <ul class="module__list">
                         <li class="module__list-item"><i class="fas fa-check"></i>Lenguaje y comunicacion</li>
                         <li class="module__list-item"><i class="fas fa-check"></i>Pensamiento matematico</li>
                         <li class="module__list-item"><i class="fas fa-check"></i>Exploracion y conocimiento del
                             mundo</li>
-                        <li class="module__list-item"><i class="fas fa-check"></i>Desarrollo fisico y salud</li>
-                        <li class="module__list-item"><i class="fas fa-check"></i>Desarrollo personal y social</li>
-                        <li class="module__list-item"><i class="fas fa-check"></i>Expresion y apreciacion artisticas
-                        </li>
-                    </ul>
+                            <li class="module__list-item"><i class="fas fa-check"></i>Desarrollo fisico y salud</li>
+                            <li class="module__list-item"><i class="fas fa-check"></i>Desarrollo personal y social</li>
+                            <li class="module__list-item"><i class="fas fa-check"></i>Expresion y apreciacion artisticas
+                            </li>
+                        </ul>
                 </div>
 
                 <div class="module">
@@ -115,9 +105,9 @@
                     </ul>
                 </div>
 
-                <div class="module module--hor">
+                <div class="module">
                     <h3 class="module__title">ASPECTOS EN QUE SE ORGANIZAN</h3>
-                    <div class="submodule submodule--hor">
+                    <div class="submodule">
                         <ul class="module__list">
                             <li class="module__list-item"><i class="fas fa-check"></i>Lenguaje oral</li>
                             <li class="module__list-item"><i class="fas fa-check"></i>Lenguaje escrito</li>
@@ -128,7 +118,7 @@
                             <li class="module__list-item"><i class="fas fa-check"></i>Coordinacion, fuerza y equilibrio
                             </li>
                         </ul>
-
+                        
                         <ul class="module__list">
                             <li class="module__list-item"><i class="fas fa-check"></i>Promocion de la salud</li>
                             <li class="module__list-item"><i class="fas fa-check"></i>Identidad personal</li>
@@ -141,24 +131,25 @@
                             </li>
                             <li class="module__list-item"><i class="fas fa-check"></i>Expresion dramatica y apreciacion
                                 teatral</li>
-                        </ul>
-
+                            </ul>
+                            
                     </div>
-
                 </div>
 
 
             </div>
         </div>
+        </div>
     </div>
-    </div>
+</div>
 
-    <div id="footer"></div>
+<div id="footer"></div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>$(function () {$("#header").load("header.html");});</script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>$(function () { $("#header").load("header.html"); });</script>
     <script>$(function () { $("#footer").load("footer.html"); });</script>
     <script src="https://kit.fontawesome.com/742dfea30d.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

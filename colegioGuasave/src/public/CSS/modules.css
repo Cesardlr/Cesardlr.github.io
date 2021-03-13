@@ -16,7 +16,6 @@
     flex-direction: column;
     padding: 20px;
     border: 10px solid #d94f5c;
-    min-width:270px;
     max-width: 750px;
 }
 
@@ -68,16 +67,13 @@
 }
 
 .module--img {
-    min-width: 300px;
-    min-height: 400px;
-    /* max-height: 450px; */
     max-width: 500px;
     justify-content: center;
 }
 
 .module__img {
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 100px;
+    min-height: 100px;
     max-width: 500px;
     max-height: 500px;
     object-fit: cover;

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 *,
 *:before,
 *:after {
@@ -8,9 +11,9 @@
 
 html {
     min-height: 100%;
+    width: 100%;
     position: relative;
     scroll-behavior: smooth;
-    max-width: 1600px;
 }
 
 ::-webkit-scrollbar {
@@ -37,9 +40,9 @@ html {
 body {
     width: 100%;
     background-image: url(../img/whitediamond.png);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 34px;
-    /* margin-top: 50px; */
+    margin-top: 70px;
 }
 
 
@@ -94,3 +97,9 @@ body {
     text-align: justify;
     /* float: left; */
 }
+
+
+
+
+
+
