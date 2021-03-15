@@ -7,6 +7,10 @@
     padding: 20px 40px;
 }
 
+.text-p{
+    width:90%;
+}
+
 .text-container__img{
     /* min-width: 150px; */
     max-width: 300px;
@@ -16,17 +20,21 @@
 
 .division-container{
     text-align: start;
-    min-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .division{
     margin: 0px 15px;
     padding: 10px;
-    max-width:1000px;
+    width:90%;
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .division__img{
@@ -39,6 +47,102 @@
 }
 
 .module{
-    max-width: 100%;
+    min-width: 100%;
 }
 
+.title{
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .text{
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .text-container__img{
+        max-width: 100%;
+    }
+
+
+    .title{
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+
+
+    .module__title{
+        font-size: 15px;
+        margin:0px;
+    }
+
+    .module{
+        padding: 0px;
+        border: 8px solid #d94f5c;
+    }
+    
+    
+    .text{
+        max-width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center;
+    }
+
+    .text-p{
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+
+    .text-container{
+        padding: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    .title{
+        letter-spacing: 1px;
+        font-size: 17px;
+    }
+
+    .module__title{
+        font-size: 15px;
+        margin:0px;
+    }
+
+    .text-container{
+        padding: 10px;
+    }
+
+    .text{
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content:center;
+    }
+
+    .text-p{
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+
+    .module{
+        padding: 0px;
+        border: 5px solid #d94f5c;
+    }
+}

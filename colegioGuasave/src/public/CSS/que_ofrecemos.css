@@ -4,6 +4,10 @@ body{
     justify-items: center;
 }
 
+.module-container{
+    width: 95%;
+}
+
 .title{
     margin-top: 20px;
 }
@@ -50,6 +54,16 @@ body{
 .module-container{
     flex-direction: column;
 }
+
+@media only screen and (max-width: 1500px) {
+    .module{
+        max-width: 550px;
+    }
+    
+    .module__img{
+        width: 600px;
+    }
+    }
 
 @media only screen and (max-width: 1300px) {
 .module{
