@@ -9,8 +9,8 @@ router.post("/send-email", (req, res) => {
     const contentHtml = `
     <h1>Preguntas sobre pagina del Colegio Guasave</h1>
     <ul>
-    <li>Nombre:${name}</li>
-    <li>email:${email}</li>
+    <li>Nombre: ${name}</li>
+    <li>email: ${email}</li>
     </ul>
     <p>${message}</p>
     `;
@@ -44,7 +44,7 @@ router.post("/send-email", (req, res) => {
 
            let mailOptions = {
                 from: "Pagina Web Colegio Guasave <cesardelriodlr@gmail>",
-                to: "eduardo.drb@gmail.com",
+                to: "cesar.delrio.colgve@gmail.com",
                 cc:"",
                 subject: "Pagina web colegio guasave dudas",
                 html:contentHtml 

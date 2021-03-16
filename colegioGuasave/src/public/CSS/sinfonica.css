@@ -5,7 +5,7 @@
     align-items: center;
     text-align: justify;
     padding: 20px 40px;
-    max-width: 1500px;
+    width: 100%;
 }
 
 .text-container__img{
@@ -80,4 +80,20 @@ h2{
     max-width:260px;
     box-shadow: none;
     filter:drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+
+
+@media only screen and (max-width: 1450px) {
+}
+
+
+@media only screen and (max-width: 1030px) {
+}
+
+@media only screen and (max-width: 550px){
+}
+
+
+@media only screen and (max-width: 320px) {
 }
